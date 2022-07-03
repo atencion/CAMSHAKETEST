@@ -29,7 +29,7 @@ export default function App() {
     <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 160, 160], fov: 20 }}>
       <fog attach="fog" args={['lightpink', 60, 100]} />
       <Suspense fallback={null}>
-        <ambientLight intensity={0.5} />
+        <ambientLight intensity={0.4} />
         <Model position={[-4.5, -4, 0]} rotation={[0, -2.8, 0]} />
         <spotLight position={[50, 50, -30]} castShadow />
         <pointLight position={[-10, -10, -10]} color="red" intensity={3} />
